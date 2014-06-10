@@ -6,5 +6,4 @@
 @google
 Scenario: Search for my blog
 	Given I am on the google search page
-	When I search for "content"
-	Then the result should be 120 on the screen
+
