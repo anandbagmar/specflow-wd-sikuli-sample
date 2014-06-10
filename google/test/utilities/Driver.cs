@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing.Imaging;
 using System.IO;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -38,6 +39,15 @@ namespace google.test.utilities
             _chromeDriver = RuntimeData.Get("driver") as ChromeDriver;
             if (_chromeDriver != null) _chromeDriver.Quit();
             RuntimeData.Remove("driver");
+        }
+
+        public static void TakeScreenShot(string fileName)
+        {
+            ITakesScreenshot _screenshotDriver = RuntimeData.Get("driver") as ITakesScreenshot;
+            Screenshot screenshot = _screenshotDriver.GetScreenshot();
+            string absoluteFilePath = Directory.GetCurrentDirectory() + @"\" + fileName + ".png";
+            Console.WriteLine("Saved screenshot: " + absoluteFilePath);
+            screenshot.SaveAsFile(absoluteFilePath, ImageFormat.Png);
         }
     }
 }

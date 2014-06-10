@@ -20,14 +20,14 @@ namespace google.features.step_definitions
             search.NavigateToSearchPage();
         }
 
-        [When(@"I search for '(.*)'")]
+        [StepDefinition(@"I search for '(.*)'")]
         public void WhenISearchFor(string content)
         {
             Search search = new Search();
             search.SearchFor(content);
         }
 
-        [Then(@"I see a list of related posts")]
+        [StepDefinition(@"I see a list of related posts")]
         public void ThenISeeAListOfRelatedPosts()
         {
             Search search = new Search();

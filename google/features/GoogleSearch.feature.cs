@@ -75,7 +75,7 @@ namespace google.Features
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.Given("I am on the google search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.And("I am on the google search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
  testRunner.When("I search for \'essenceoftesting\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
