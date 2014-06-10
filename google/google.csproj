@@ -79,10 +79,12 @@
     </Compile>
     <Compile Include="features\step_definitions\SearchSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="test\pages\Search.cs" />
-    <Compile Include="test\utilities\RuntimeData.cs" />
-    <Compile Include="test\utilities\Hooks.cs" />
-    <Compile Include="test\utilities\Driver.cs" />
+    <Compile Include="test\BusinessLayer\Search.cs" />
+    <Compile Include="test\Pages\SearchPage.cs" />
+    <Compile Include="test\Utilities\PageUtils.cs" />
+    <Compile Include="test\Utilities\RuntimeData.cs" />
+    <Compile Include="test\Utilities\Hooks.cs" />
+    <Compile Include="test\Utilities\Driver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

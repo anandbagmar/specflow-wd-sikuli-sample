@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace google.test.pages
 {
-    class Search
+    class SearchPage
     {
     }
 }

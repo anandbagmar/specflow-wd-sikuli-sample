@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using google.test.BusinessLayer;
 using google.test.utilities;
 using TechTalk.SpecFlow;
 
@@ -15,8 +16,8 @@ namespace google.features.step_definitions
         [Given(@"I am on the google search page")]
         public void GivenIAmOnTheGoogleSearchPage()
         {
-            var _driver = Driver.CreateChromeDriver();
-            
+            Search search = new Search();
+            search.NavigateToSearchPage();
         }
     }
 }
