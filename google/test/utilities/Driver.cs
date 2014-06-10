@@ -2,23 +2,40 @@
 using System.IO;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Remote;
 
 namespace google.test.utilities
 {
     class Driver
     {
-        private static ChromeDriver _chromeDriver = null;
+        private static ChromeDriver _chromeDriver;
+
         public static IWebDriver CreateChromeDriver()
         {
-            if (null == _chromeDriver)
+            Console.WriteLine("Create Chrome Driver");
+            if (null == RuntimeData.Get("driver"))
             {
-                Console.WriteLine("Current directory: " + Directory.GetCurrentDirectory());
+                Console.WriteLine("Driver NOT created yet. Creating a new instance of the Chrome Driver.");
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.LeaveBrowserRunning = false;
+                chromeOptions.AddArgument("test-type");
+
+                DesiredCapabilities capabilities = DesiredCapabilities.Chrome();
+                capabilities.SetCapability(ChromeOptions.Capability, chromeOptions);
+
                 _chromeDriver = new ChromeDriver(Directory.GetCurrentDirectory() + @"\\libraries", chromeOptions);
+                RuntimeData.Save("driver", _chromeDriver);
                 _chromeDriver.Navigate().GoToUrl("http://www.essenceoftesting.blogspot.com");
             }
-            return _chromeDriver;
+            return RuntimeData.Get("driver") as ChromeDriver;
+        }
+
+        public static void CloseChromeDriver()
+        {
+            Console.WriteLine("Close Chrome Driver");
+            _chromeDriver = RuntimeData.Get("driver") as ChromeDriver;
+            if (_chromeDriver != null) _chromeDriver.Quit();
+            RuntimeData.Remove("driver");
         }
     }
 }
