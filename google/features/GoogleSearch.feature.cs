@@ -76,6 +76,10 @@ namespace google.Features
 this.ScenarioSetup(scenarioInfo);
 #line 8
  testRunner.Given("I am on the google search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 9
+ testRunner.When("I search for \'essenceoftesting\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 10
+ testRunner.Then("I see a list of related posts", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

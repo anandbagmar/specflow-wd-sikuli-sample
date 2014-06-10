@@ -11,12 +11,12 @@ namespace google.test.utilities
     {
         private static readonly Hashtable RuntimeSessionData = new Hashtable();
 
-        public static void Save(String key, Object value)
+        public static void Save(string key, Object value)
         {
             RuntimeSessionData.Add(key, value);
         }
 
-        public static Object Get(String key)
+        public static Object Get(string key)
         {
             return RuntimeSessionData[key];
         }

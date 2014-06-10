@@ -19,11 +19,13 @@ namespace google.test.utilities
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.LeaveBrowserRunning = false;
                 chromeOptions.AddArgument("test-type");
+                chromeOptions.AddArgument("--start-maximized");
 
                 DesiredCapabilities capabilities = DesiredCapabilities.Chrome();
                 capabilities.SetCapability(ChromeOptions.Capability, chromeOptions);
 
                 _chromeDriver = new ChromeDriver(Directory.GetCurrentDirectory() + @"\\libraries", chromeOptions);
+                _chromeDriver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 30));
                 RuntimeData.Save("driver", _chromeDriver);
                 _chromeDriver.Navigate().GoToUrl("http://www.essenceoftesting.blogspot.com");
             }

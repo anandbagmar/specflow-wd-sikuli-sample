@@ -6,4 +6,6 @@
 @google
 Scenario: Search for my blog
 	Given I am on the google search page
+	When I search for 'essenceoftesting'
+	Then I see a list of related posts
 

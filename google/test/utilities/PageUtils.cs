@@ -10,7 +10,7 @@ namespace google.test.Utilities
 {
     class PageUtils
     {
-        public static void NavigateTo(String url)
+        public static void NavigateTo(string url)
         {
             var driver = RuntimeData.Get("driver") as IWebDriver;
             driver.Navigate().GoToUrl(url);

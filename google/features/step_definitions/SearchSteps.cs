@@ -19,5 +19,19 @@ namespace google.features.step_definitions
             Search search = new Search();
             search.NavigateToSearchPage();
         }
+
+        [When(@"I search for '(.*)'")]
+        public void WhenISearchFor(string content)
+        {
+            Search search = new Search();
+            search.SearchFor(content);
+        }
+
+        [Then(@"I see a list of related posts")]
+        public void ThenISeeAListOfRelatedPosts()
+        {
+            Search search = new Search();
+            search.AssertSearchResultsFound();
+        }
     }
 }
