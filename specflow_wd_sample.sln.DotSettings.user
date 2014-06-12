@@ -3,9 +3,33 @@
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="C:\Users\anandb\Projects\P4R\specflow-wd-sikuli-sample\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
-	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=1071B889468E415D86914CCDABD844E5/@KeyIndexDefined">True</s:Boolean>
-	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=1071B889468E415D86914CCDABD844E5/Name/@EntryValue">All tests from GoogleSearch.feature.cs</s:String>
-	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=1071B889468E415D86914CCDABD844E5/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;Elements&gt;&lt;UnitTestElement Provider="nUnit" Id="google.Features.GoogleSearchFeature" type="NUnitTestFixtureElement" Project="E0328269-C014-4129-A41B-33B64F83741C" /&gt;&lt;UnitTestElement Provider="nUnit" Id="google.Features.GoogleSearchFeature.SearchForMyBlog" ParentId="google.Features.GoogleSearchFeature" type="NUnitTestElement" TypeName="google.Features.GoogleSearchFeature" MethodName="SearchForMyBlog" Project="E0328269-C014-4129-A41B-33B64F83741C" /&gt;&lt;UnitTestElement Provider="nUnit" Id="google.Features.GoogleSearchFeature.SearchForMyBlog_FailingTest" ParentId="google.Features.GoogleSearchFeature" type="NUnitTestElement" TypeName="google.Features.GoogleSearchFeature" MethodName="SearchForMyBlog_FailingTest" Project="E0328269-C014-4129-A41B-33B64F83741C" /&gt;&lt;/Elements&gt;&lt;/Session&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=8E0C2C6F4ACC4F7DB07A9C62F060547F/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=8E0C2C6F4ACC4F7DB07A9C62F060547F/Name/@EntryValue">All tests from features</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=8E0C2C6F4ACC4F7DB07A9C62F060547F/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;Elements&gt;&lt;UnitTestElement Provider="nUnit" Id="google.Features.GoogleSearchFeature" type="NUnitTestFixtureElement" Project="E0328269-C014-4129-A41B-33B64F83741C" /&gt;&lt;UnitTestElement Provider="nUnit" Id="google.Features.GoogleSearchFeature.SearchForMyBlog" ParentId="google.Features.GoogleSearchFeature" type="NUnitTestElement" TypeName="google.Features.GoogleSearchFeature" MethodName="SearchForMyBlog" Project="E0328269-C014-4129-A41B-33B64F83741C" /&gt;&lt;/Elements&gt;&lt;/Session&gt;</s:String>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=F1ABEC636C46474492942094CF8C7249/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=F1ABEC636C46474492942094CF8C7249/Name/@EntryValue">All tests from features</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=F1ABEC636C46474492942094CF8C7249/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;Elements&gt;&lt;UnitTestElement Provider="nUnit" Id="google.Features.GoogleSearchFeature" type="NUnitTestFixtureElement" Project="E0328269-C014-4129-A41B-33B64F83741C" /&gt;&lt;UnitTestElement Provider="nUnit" Id="google.Features.GoogleSearchFeature.SearchForMyBlog" ParentId="google.Features.GoogleSearchFeature" type="NUnitTestElement" TypeName="google.Features.GoogleSearchFeature" MethodName="SearchForMyBlog" Project="E0328269-C014-4129-A41B-33B64F83741C" /&gt;&lt;/Elements&gt;&lt;/Session&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

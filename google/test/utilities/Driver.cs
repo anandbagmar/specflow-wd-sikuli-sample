@@ -19,7 +19,7 @@ namespace google.test.utilities
             {
                 Console.WriteLine("\tDriver NOT created yet. Creating a new instance of the Chrome Driver.");
                 ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.LeaveBrowserRunning = false;
+                chromeOptions.LeaveBrowserRunning = true;
                 chromeOptions.AddArgument("test-type");
                 chromeOptions.AddArgument("--start-maximized");
 

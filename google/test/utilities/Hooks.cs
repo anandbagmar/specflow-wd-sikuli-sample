@@ -10,65 +10,68 @@ namespace google.test.utilities
         [BeforeTestRun]
         public static void BeforeTestRun()
         {
-            Console.WriteLine("Hooks.cs - Before Test Run");
+            Console.WriteLine("1 Hooks.cs - Before Test Run");
+        }
+
+        [BeforeFeature]
+        public static void BeforeFeature()
+        {
+            Console.WriteLine("2 Hooks.cs - Before Feature");
             Driver.CreateChromeDriver();
         }
 
-        //[BeforeFeature]
-        //public static void BeforeFeature()
-        //{
-        //    Console.WriteLine("Hooks.cs - Before Feature");
-        //}
+        [Before]
+        public static void Before()
+        {
+            Console.WriteLine("3 Hook.cs - Before");
+        }
 
         [BeforeScenario]
         public static void BeforeScenario()
         {
-            Console.WriteLine("Hook.cs - Before Scenario");
+            Console.WriteLine("4 Hook.cs - Before Scenario");
             VerificationFailures.Clear();
         }
 
-        //[Before]
-        //public static void Before()
-        //{
-        //    Console.WriteLine("Hook.cs - Before");
-        //}
+        [BeforeStep]
+        public static void BeforeStep()
+        {
+            Console.WriteLine("5 Hook.cs - Before Step");
+        }
 
-        //[BeforeStep]
-        //public static void BeforeStep()
-        //{
-        //    Console.WriteLine("Hook.cs - Before Step");
-        //}
 
-        //[AfterTestRun]
-        //public static void AfterTestRun()
-        //{
-        //    Console.WriteLine("Hooks.cs - After Test Run");
-        //}
-
-        //[AfterFeature]
-        //public static void AfterFeature()
-        //{
-        //    Console.WriteLine("Hooks.cs - After Feature");
-        //}
+        [AfterStep]
+        public static void AfterStep()
+        {
+            Console.WriteLine("_5 Hook.cs - After Step");
+        }
 
         [AfterScenario]
         public static void AfterScenario()
         {
-            Console.WriteLine("Hook.cs - After Scenario");
-            CustomAsserts.AssertTrue(!VerificationFailures.HasVerificationFailures(), "Verification failures in the scenario."+VerificationFailures.DumpFailures());
+            Console.WriteLine("_4 Hook.cs - After Scenario");
+            CustomAsserts.AssertTrue(!VerificationFailures.HasVerificationFailures(), "Verification failures in the scenario." + VerificationFailures.DumpFailures());
         }
 
         [After]
         public static void After()
         {
-            Console.WriteLine("Hook.cs - After");
+            Console.WriteLine("_3 Hook.cs - After ...");
+        }
+
+        [AfterFeature]
+        public static void AfterFeature()
+        {
+            Console.WriteLine("_2 Hooks.cs - After Feature");
             Driver.CloseChromeDriver();
         }
 
-        //[AfterStep]
-        //public static void AfterStep()
-        //{
-        //    Console.WriteLine("Hook.cs - After Step");
-        //}
+        [AfterTestRun]
+        public static void AfterTestRun()
+        {
+            Console.WriteLine("_1 Hooks.cs - After Test Run");
+        }
+
+
     }
 }

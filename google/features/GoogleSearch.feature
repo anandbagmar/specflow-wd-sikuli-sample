@@ -10,7 +10,7 @@ Scenario: Search for my blog
 	Then I see a list of related posts
 
 @google
-Scenario: Search for my blog - Failing Test
+Scenario: Search for my waat
 	Given I am on the google search page
-	When I search for 'essenceoftesting'
-	Then I should see at least '1000' search results found
+	When I search for 'waat'
+	Then I should see at least '5000' search results found

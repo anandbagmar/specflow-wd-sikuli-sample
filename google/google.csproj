@@ -77,6 +77,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GoogleSearch.feature</DependentUpon>
     </Compile>
+    <Compile Include="features\AnotherFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnotherFeature.feature</DependentUpon>
+    </Compile>
     <Compile Include="features\step_definitions\SearchSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="test\BusinessLayer\Search.cs" />
@@ -90,10 +95,16 @@
     <Compile Include="test\Utilities\Driver.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="features\GoogleSearch.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GoogleSearch.feature.cs</LastGenOutput>
+    </None>
+    <None Include="features\AnotherFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnotherFeature.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

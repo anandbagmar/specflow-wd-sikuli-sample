@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using google.test.BusinessLayer;
-using google.test.utilities;
+﻿using google.test.BusinessLayer;
 using TechTalk.SpecFlow;
 
 namespace google.features.step_definitions
@@ -16,30 +11,29 @@ namespace google.features.step_definitions
         [Given(@"I am on the google search page")]
         public void GivenIAmOnTheGoogleSearchPage()
         {
-            Search search = new Search();
+            var search = new Search();
             search.NavigateToSearchPage();
         }
 
         [StepDefinition(@"I search for '(.*)'")]
         public void WhenISearchFor(string content)
         {
-            Search search = new Search();
+            var search = new Search();
             search.SearchFor(content);
         }
 
         [StepDefinition(@"I see a list of related posts")]
         public void ThenISeeAListOfRelatedPosts()
         {
-            Search search = new Search();
+            var search = new Search();
             search.AssertSearchResultsFound();
         }
 
         [StepDefinition(@"I should see at least '(.*)' search results found")]
         public void ThenIShouldSeeAtLeastSearchResultsFound(int expectedNumberOfResults)
         {
-            Search search = new Search();
+            var search = new Search();
             search.AssertSearchResultsFound(expectedNumberOfResults);
         }
-
     }
 }
