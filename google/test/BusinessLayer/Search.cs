@@ -1,7 +1,6 @@
 ﻿using google.test.pages;
 using google.test.Utilities;
 using google.test.utilities;
-using NUnit.Framework;
 
 namespace google.test.BusinessLayer
 {
@@ -25,7 +24,7 @@ namespace google.test.BusinessLayer
             SearchPage searchPage = new SearchPage();
             long numberOfSearchResults = searchPage.GetNumberOfSearchResults();
             Driver.TakeScreenShot("AssertSearchResults");
-            Assert.True(numberOfSearchResults>100, "Number of Search Results less than 100. Actual number: " + numberOfSearchResults);
+            CustomAsserts.AssertTrue(numberOfSearchResults>100, "Number of Search Results less than 100. Actual number: " + numberOfSearchResults);
         }
     }
 }

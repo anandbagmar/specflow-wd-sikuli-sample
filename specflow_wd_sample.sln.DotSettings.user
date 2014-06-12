@@ -1,10 +1,14 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/CodeStyle/LiveTemplatesUseVar/PreferVar/@EntryValue">False</s:Boolean>
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="C:\Users\anandb\Projects\P4R\specflow-wd-sikuli-sample\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
-	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=D53039C482E24002898B49FDD529D45E/@KeyIndexDefined">True</s:Boolean>
-	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=D53039C482E24002898B49FDD529D45E/Name/@EntryValue">All tests from GoogleSearch.feature.cs</s:String>
-	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=D53039C482E24002898B49FDD529D45E/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;Elements&gt;&lt;UnitTestElement Provider="nUnit" Id="google.Features.GoogleSearchFeature" type="NUnitTestFixtureElement" Project="E0328269-C014-4129-A41B-33B64F83741C" /&gt;&lt;UnitTestElement Provider="nUnit" Id="google.Features.GoogleSearchFeature.SearchForMyBlog" ParentId="google.Features.GoogleSearchFeature" type="NUnitTestElement" TypeName="google.Features.GoogleSearchFeature" MethodName="SearchForMyBlog" Project="E0328269-C014-4129-A41B-33B64F83741C" /&gt;&lt;/Elements&gt;&lt;/Session&gt;</s:String>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=1071B889468E415D86914CCDABD844E5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=1071B889468E415D86914CCDABD844E5/Name/@EntryValue">All tests from GoogleSearch.feature.cs</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=1071B889468E415D86914CCDABD844E5/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;Elements&gt;&lt;UnitTestElement Provider="nUnit" Id="google.Features.GoogleSearchFeature" type="NUnitTestFixtureElement" Project="E0328269-C014-4129-A41B-33B64F83741C" /&gt;&lt;UnitTestElement Provider="nUnit" Id="google.Features.GoogleSearchFeature.SearchForMyBlog" ParentId="google.Features.GoogleSearchFeature" type="NUnitTestElement" TypeName="google.Features.GoogleSearchFeature" MethodName="SearchForMyBlog" Project="E0328269-C014-4129-A41B-33B64F83741C" /&gt;&lt;/Elements&gt;&lt;/Session&gt;</s:String>
+	
+	
+	
 	
 	
 	
