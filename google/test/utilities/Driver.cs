@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing.Imaging;
 using System.IO;
+using google.test.Utilities;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
@@ -13,10 +14,10 @@ namespace google.test.utilities
 
         public static IWebDriver CreateChromeDriver()
         {
-            Console.WriteLine("Create Chrome Driver");
+            Console.WriteLine("\tCreate Chrome Driver");
             if (null == RuntimeData.Get("driver"))
             {
-                Console.WriteLine("Driver NOT created yet. Creating a new instance of the Chrome Driver.");
+                Console.WriteLine("\tDriver NOT created yet. Creating a new instance of the Chrome Driver.");
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.LeaveBrowserRunning = false;
                 chromeOptions.AddArgument("test-type");
@@ -35,7 +36,7 @@ namespace google.test.utilities
 
         public static void CloseChromeDriver()
         {
-            Console.WriteLine("Close Chrome Driver");
+            Console.WriteLine("\tClose Chrome Driver");
             _chromeDriver = RuntimeData.Get("driver") as ChromeDriver;
             if (_chromeDriver != null) _chromeDriver.Quit();
             RuntimeData.Remove("driver");
@@ -45,8 +46,8 @@ namespace google.test.utilities
         {
             ITakesScreenshot _screenshotDriver = RuntimeData.Get("driver") as ITakesScreenshot;
             Screenshot screenshot = _screenshotDriver.GetScreenshot();
-            string absoluteFilePath = Directory.GetCurrentDirectory() + @"\" + fileName + ".png";
-            Console.WriteLine("Saved screenshot: " + absoluteFilePath);
+            string absoluteFilePath = Directory.GetCurrentDirectory() + @"\" + FileUtils.UniqueFileName(fileName) + ".png";
+            Console.WriteLine("\tSaved screenshot: " + absoluteFilePath);
             screenshot.SaveAsFile(absoluteFilePath, ImageFormat.Png);
         }
     }
