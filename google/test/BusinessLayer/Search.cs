@@ -21,10 +21,21 @@ namespace google.test.BusinessLayer
 
         public void AssertSearchResultsFound()
         {
+            AssertSearchResults(100);
+        }
+
+        private void AssertSearchResults(long expectedNumberOfSearchResults)
+        {
             SearchPage searchPage = new SearchPage();
             long numberOfSearchResults = searchPage.GetNumberOfSearchResults();
             Driver.TakeScreenShot("AssertSearchResults");
-            CustomAsserts.AssertTrue(numberOfSearchResults>100, "Number of Search Results less than 100. Actual number: " + numberOfSearchResults);
+            CustomAsserts.AssertTrue(numberOfSearchResults > expectedNumberOfSearchResults,
+                "Number of Search Results less than 100. Actual number: " + numberOfSearchResults);
+        }
+
+        public void AssertSearchResultsFound(int expectedNumberOfResults)
+        {
+            AssertSearchResults(expectedNumberOfResults);
         }
     }
 }

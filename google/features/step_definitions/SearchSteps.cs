@@ -33,5 +33,13 @@ namespace google.features.step_definitions
             Search search = new Search();
             search.AssertSearchResultsFound();
         }
+
+        [StepDefinition(@"I should see at least '(.*)' search results found")]
+        public void ThenIShouldSeeAtLeastSearchResultsFound(int expectedNumberOfResults)
+        {
+            Search search = new Search();
+            search.AssertSearchResultsFound(expectedNumberOfResults);
+        }
+
     }
 }

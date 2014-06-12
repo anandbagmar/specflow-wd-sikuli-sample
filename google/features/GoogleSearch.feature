@@ -5,7 +5,12 @@
 
 @google
 Scenario: Search for my blog
-	And I am on the google search page
+	Given I am on the google search page
 	When I search for 'essenceoftesting'
 	Then I see a list of related posts
 
+@google
+Scenario: Search for my blog - Failing Test
+	Given I am on the google search page
+	When I search for 'essenceoftesting'
+	Then I should see at least '1000' search results found
